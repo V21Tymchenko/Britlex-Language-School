@@ -24,3 +24,12 @@ line-height: 1.5;
   margin: 0;
   background-color: transparent;
 }
+.header__button .header__icon-close{
+  display: none;
+}
+.header-button.is-open .header__icon-close{
+  display: block;
+}
+.header-button.is-open .header__icon-menu{
+  display: none;
+}
