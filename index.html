@@ -9,19 +9,19 @@
 </head>
 <body>
     <header class="page-header"> 
-        <div class="container">
+        <div class="container container-position">
             <div class="thumb"> 
-        <a class="logo-start wow" href="./index.html"><span>Brit</span><span class="logo-end">lex</span></a>
-        <button class="header__button"  data-menu-button>
-        <svg class="page-header__icon"  width="34px" height="20px">
+        <a class="logo" href="./index.html"><span>Brit</span><span class="logo-end">lex</span></a>
+        <button data-menu-button aria-expanded="false" aria-controls="menu-container" type="button" class="header__button" >
+        <svg class="page-header__icon"  width="34px" height="20px" aria-label="Переключатель мобильного меню">
             <use class="header__icon-close" href="./img/symbol-defs-2.svg#icon-menu"></use>
             <use class="header__icon-menu"  href="./img/symbol-defs-2.svg#icon-cross"></use>
         </svg>
         </button>
-        </div>
-        <div class="header__menu" data-menu>
-        <nav>
-        <ul class="'page-header__list">
+        </div >
+        <div class="header__menu" id="menu-container" data-menu>
+        <nav class="header__menu-nav">
+        <ul class="page-header__list">
             <li class="page-header__item">Home</li>
             <li class="page-header__item">Skills</li>
             <li class ="page-header__item">About Us</li>
@@ -33,14 +33,29 @@
           </div>
           </div>
     </header>
-<section class="hero">
-    <div class="container">
+<section class="hero section-device">
+    <div class="container hero__container">
+        <div class="hero__container-position">
+            <div class="hero__title-container">
     <h1 class="hero__title">Learn Any Foreign Language</h1>
+    </div>
+    <div class="hero__text-container" >
     <p class="hero__text">With our teachers who write a program for 
 each student, you will be able to make your
 first sketch after the first lesson.</p>
     <button class="hero__button">Get started</button>
-    <img src="" alt="" class="hero__photo">
+    </div>
+    </div>
+    <div class="container hero__container hero__container-indent" >
+        <picture >
+            <source srcset="./img/hero.jpg x1, ./img/hero@2 x2"
+            media="(max-width:575px)"> 
+            <source srcset="./img/hero-tablet.jpg x1, ./img/hero-tablet@2.jpg x2"
+            media="(max-width:767px)">
+    <img class="hero__photo" src="./img/hero-tablet@2.jpg" alt="learning English" class="hero__photo">
+        </picture>
+     
+    </div>
     </div>
 </section>
 <section class="skills">
@@ -146,6 +161,7 @@ our first session for only $1</p>
         </ul>
         </div>
 </footer>
-    <script type="module" src="./js/vars.js"></script>
+   <script src="./js/menu.js"></script>
+    <!-- <script type="module" src="./js/vars.js"></script> -->
 </body>
 </html>
