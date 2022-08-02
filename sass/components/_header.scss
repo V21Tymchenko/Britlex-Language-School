@@ -1,9 +1,20 @@
 .page-header__icon{
     display: block;
-
-     
 }
+
 .thumb {
     display:flex;
     justify-content: space-between;
+}
+
+.logo-start{ 
+font-weight: 400;
+font-size: 36px;
+line-height: 1.5;
+color: $secondColor;
+color:blue;
+}
+
+.logo-end{
+    color:#939393
 }

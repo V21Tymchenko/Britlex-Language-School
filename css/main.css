@@ -575,4 +575,8 @@ a {
 .thumb {
   display: flex;
   justify-content: space-between;
+}
+
+.logo-end {
+  color: #939393;
 }/*# sourceMappingURL=main.css.map */
