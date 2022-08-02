@@ -562,8 +562,17 @@ a {
 }
 
 .container {
-  width: 320px;
+  width: 100vw;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.page-header__icon {
+  display: block;
+}
+
+.thumb {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
