@@ -1,20 +1,26 @@
-.page-header__icon{
-    display: block;
+.page-header__icon {
+  display: block;
 }
 
 .thumb {
-    display:flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.logo-start{ 
-font-weight: 400;
-font-size: 36px;
+.logo-end {
+  color: #939393;
+}
+
+.logo-start.wow {
+  font-weight: 400;
+font-size: 24px;
 line-height: 1.5;
-color: $secondColor;
-color:blue;
+  color: $secondColor;
 }
 
-.logo-end{
-    color:#939393
+.header__button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 }

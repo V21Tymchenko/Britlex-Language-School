@@ -579,4 +579,18 @@ a {
 
 .logo-end {
   color: #939393;
+}
+
+.logo-start.wow {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.header__button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */
