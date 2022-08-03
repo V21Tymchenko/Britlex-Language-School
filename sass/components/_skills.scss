@@ -1,0 +1,135 @@
+.skills__title{
+@media screen and (max-width:766px){
+    text-align: center;
+
+   
+}
+font-size: 24px;
+line-height: 3.33;
+@media screen and (min-width:575px){
+ font-size: 30px;
+line-height: 2.6;
+}
+@media screen and (min-width:767px){
+    font-size: 20px;
+line-height: 4;
+}
+
+}
+.skills__photo{
+margin-bottom: 5px;
+
+ width: 100%;
+ background-color: $cardColor;
+@media screen and (min-width:767px){
+    width: 216px;
+height: 144px;
+}
+@media screen and (min-width:767px){
+    margin-bottom: 0;
+}
+}
+.skills__item{
+    text-align: center;
+    background-color: $cardColor;
+    border-radius: 5px;
+    @media screen and (max-width:574px){
+        padding: 8px 16px 38px;
+        margin-bottom: 21px;
+    }
+      @media screen and (min-width:575px) and (max-width:766px) {
+     display: flex;
+     flex-direction: column;
+    
+     
+        width: 240px;
+        min-height: 585px;
+
+   margin: 15px;
+   padding: 5px 15px 36px;
+    }
+     @media screen and (min-width:767px){
+        margin: 9px;
+     }
+@media screen and (min-width:767px){
+    padding: 10px 20px;
+}
+}
+.skills__text{
+ font-size: 13px;
+line-height: 1.53;
+
+color: $mainTextColor;
+text-align: start;
+}
+.skills__text-start, 
+.skills__text-end{
+    margin-bottom: 20px;
+}
+.skills__button{
+border-radius: 5px;
+background: $buttonColor;
+color:$mainColor;
+
+    @media screen and(max-width:574px){
+        padding: 14px 43px;
+
+        font-weight: 500;
+font-size: 16px;
+line-height: $mainLineHeight;
+
+    }
+    @media screen and (min-width:575px) and (max-width:766px) {
+        padding: 13px 54px;
+        font-size: 16px;
+line-height: $mainLineHeight;
+ margin-top: auto;
+    }
+    @media screen and (min-width:767px){
+font-size: 13px;
+line-height: 1.53;
+
+    }
+    @media screen and (min-width:767px){
+        margin-top: auto;
+        padding: 14px 43px;
+    }
+}
+.skills__item-container{
+    text-align: start;
+}
+.skills-title-center{
+    text-align: center;
+}
+.skills-title-start{
+    text-align: start;
+}
+.skills__list{
+    @media screen and (min-width:575px) and (max-width:766px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin:-15px;
+    }
+      @media screen and (min-width:767px){
+        display: flex;
+         margin:-9px;
+       }
+}
+  
+    
+.item-container{
+       @media screen and (min-width:767px){
+        display: flex;
+       }
+}
+.second{
+    @media screen and (min-width:767px){
+        height: 442px;
+}
+}
+.reverse{
+      @media screen and (min-width:767px){
+        display: flex;
+        flex-direction: row-reverse;
+}
+}

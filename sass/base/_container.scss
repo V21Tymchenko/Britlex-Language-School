@@ -3,14 +3,27 @@
    padding-left: 15px;
    padding-right: 15px;
    margin:0 auto;
-   text-align: center;
+ @media screen and (max-width:574px){
+  text-align: center;
+ }
    @media screen and (min-width:575px) and (max-width:766px){
      padding-left: 30px;
    padding-right: 30px;
+   width: 575px;
    }
    @media screen and (min-width:767px){
      padding-left: 38px;
    padding-right: 38px;
    width: 767px;
+   }
+     @media screen and (min-width:992px){
+     padding-left: 31px;
+   padding-right: 31px;
+   width: 930px;
+   }
+   @media screen and (min-width:1340px){
+      padding-left: 50px;
+   padding-right: 50px;
+   width:1340px;
    }
 }

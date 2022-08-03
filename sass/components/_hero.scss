@@ -1,22 +1,26 @@
 .hero__photo{
- width: 299px;
-height: 299px;
+width:100%;
 @media screen and (min-width:575px) and (max-width:766px){
 width: 424px;
 height: 424px;
 }
+@media screen and (min-width:992px){
+ width: 352px;
+height: 330px;
+margin-left: auto;
 }
-.hero__container{
-    display: flex;
-    flex-direction: column-reverse;
-     @media screen and (min-width:767px){
-     display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-between;
-    }
+@media screen and (min-width:1340px){
+    width: 661px;
+height: 661px;
+}
 }
 
+.header__picture{
+   @media screen and (min-width:992px){
+    text-align: center;
+margin-left: auto;
+} 
+}
 .hero__title-hidden{
   display: none;
 }
@@ -43,6 +47,10 @@ line-height: 1.25;
     margin-bottom: 0;
     text-align: start;
 }
+@media screen and (min-width:1340px){
+font-size: 64px;
+line-height: 1.33;
+}
 }
 .hero__text{
  margin-bottom: 35px;  
@@ -64,6 +72,12 @@ line-height: $mainLineHeight;
     text-align: start;
       margin-bottom: 32px;
 }
+@media screen  and (min-width:1340px){
+    font-size: 24px;
+line-height: $mainLineHeight;
+margin-bottom: 60px;
+
+}
 }
 .hero__button{
 padding: 18px 99px;
@@ -75,16 +89,45 @@ line-height: $mainLineHeight;
  background-color: $buttonColor;
 color: $mainColor;
 border-radius: 5px;
+
+    &:hover,
+    &:focus{
+        background-color: $mainColor;
+        color: $buttonColor;
+        border: 2px solid $buttonColor;
+
+}
 @media screen and (min-width:767px){
     padding: 19px 67px;
 }
+@media screen and (min-width:992px){
+padding: 22px 78px;
+font-size: 24px;
+line-height: $mainLineHeight;
+}
+@media screen and (min-width:1340px){
+       
+    padding: 32px 117px;
+    font-weight: 400;
+font-size: 36px;
+line-height: $mainLineHeight;
+}
 }
 .hero__container-position{
-    text-align: center;
+@media screen and (max-width:766px){
+    text-align: center;  
+}
+  
 }
 .hero__container-indent{
+    @media screen and (max-width:766px){
     margin-bottom: 16px;
 }
+@media screen and (min-width:992px){
+    margin-left: auto;
+}
+    }
+
 .container-positin{
      @media screen and (max-width:991px){
     position: fixed;
@@ -104,15 +147,71 @@ border-radius: 5px;
     }
 }
 .hero__title-container{
-    @media screen and (min-width:767px) {
+    position: relative;
+    @media screen and (min-width:767px) and (max-width:1339px) {
+
 width: 217px;
 height: 135px;
 text-align: start;
 margin-bottom: 25px;
+
+    }
+    @media screen and (min-width:1340px) {
+        margin-bottom: 40px;
     }
 }
 .hero__text-container{
-width: 341px;
+    @media screen and (min-width:320px) and (max-width:766px){
+            text-align: center;
+            margin-right: 0 auto;
+              text-align: center;
+    }
+  
+    @media screenand and (min-width:767px) and (max-width:1339px){
+ width: 341px;
 height: 72px;
-text-align: start;
+  text-align: start;
+
+    }
+
+}
+.hero__container{
+    display: flex;
+    flex-direction: column-reverse;
+    @media screen  and (max-width:766px) {
+         text-align: center;
+    }
+     @media screen and (min-width:767px) {
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+}
+.hero__icon-light{
+
+    @media screen  and (max-width:991px){
+         display: none; 
+    }
+  
+    @media screen and (min-width:992px) and (max-width:1339px){
+       position: absolute;
+bottom: 0;
+left: 80%;
+display: inline-block;
+fill: $secondColor;
+
+width: 51px;
+height: 51px;  
+    }
+@media screen and (min-width:1340px){
+ bottom: 0;
+transform: translate(250px, -200%);
+display: inline-block;
+fill: $secondColor;
+
+    width: 84px;
+height: 84px; 
+}
+
 }

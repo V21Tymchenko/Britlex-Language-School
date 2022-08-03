@@ -6,6 +6,9 @@
 .container-position{
   display: flex;
   align-items: center;
+  @media screen and (min-width:1340px){
+    justify-content: space-between;
+  }
 
 }
 .page-header__icon {
@@ -40,6 +43,10 @@ line-height: $mainLineHeight;
 @media screen and (min-width:992px){
 font-size: 30px;
 line-height: 1.5;
+}
+@media screen and (min-width:1339px) {
+  font-size: 36px;
+line-height: $mainLineHeight;
 }
 }
 
@@ -86,9 +93,12 @@ height: 24px;
     flex-basis:auto;
   }
   }
-    @media screen and (min-width:992px){
-      display: flex;
+    @media screen and (min-width:992px) {
+ display: flex;
       align-items: center;
+    }
+    @media screen and (min-width:992px) and (max-width:1339px){
+     
       margin-left: auto;
     }
 }
@@ -122,6 +132,14 @@ line-height: 1.5;
    @media screen  and (min-width:992px){
     padding-top: 30px;
     padding-bottom: 30px;
+    &:hover,
+    &:focus{
+        color: $mainTextColor;
+    }
+   }
+   @media screen and (min-width:1340px) {
+  font-size: 20px;
+line-height: $mainLineHeight;
    }
 }
 .header__menu-nav{
@@ -131,6 +149,9 @@ line-height: 1.5;
   }
   @media screen  and (min-width:992px){
     margin-right: 82px;
+  }
+  @media screen and (min-width:1340px) {
+    margin-right: 225px;
   }
 
 }
@@ -143,11 +164,27 @@ font-size: 18px;
 line-height: $mainLineHeight;
 
 color: $secondColor;
-@media screen and (min-width:992px){
-  padding: 12px 40px;
+
   border: 2px solid #263238;
   border-radius: 5px;
   background-color: $mainColor;
+    &:hover,
+    &:focus{
+        background-color: $buttonColor;
+        color: $mainColor;
+    }
+@media screen and (min-width:992px){
+  padding: 12px 40px;
+
+  
+  font-size: 18px;
+line-height: $mainLineHeight;
+}
+@media screen and (min-width:1340px){
+
+    padding: 17px 57px;
+    font-size: 24px;
+
 }
 }
 .header__button .header__icon-close{
